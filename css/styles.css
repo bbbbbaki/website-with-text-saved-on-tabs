@@ -1,0 +1,188 @@
+/* Your existing CSS styles here */
+
+/* Custom CSS for non-standard design */
+
+/* Add styles for the vertical menu */
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 150px; /* Adjust the width of the menu as needed */
+  background-color: #333; /* Change the background color of the menu */
+  color: #fff; /* Change the text color of the menu items */
+  padding: 20px;
+}
+
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #555; /* Change the background color of the hovered menu item */
+}
+
+/* Adjust the height of the menu items to fit the available space */
+.menu-item {
+  height: calc((100% - 180px) / 10);
+}
+
+/* Rest of the CSS styles remain the same as before */
+
+/* Add styles to highlight the selected menu item */
+.menu-item.active {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+/* Rest of the CSS styles remain the same as before */
+
+/* Custom CSS for non-standard design */
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+h1 {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea,
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #64b5f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2196f3;
+}
+
+/* Updated styles for the text boxes */
+#text-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-box {
+  position: relative;
+  width: calc(20% - 15px); /* Adjust the width to fit 5 text boxes in a row within the 1500px container */
+  margin: 5px; /* Reduce the margins between text boxes */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.text-box:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-box h2 {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.text-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.edit-button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: #64b5f6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #2196f3;
+}
+
+/* Стили для формы редактирования */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.edit-form input,
+.edit-form textarea,
+.edit-form button {
+  margin: 5px 0;
+}
+
+/* Rest of the CSS styles remain the same as before */

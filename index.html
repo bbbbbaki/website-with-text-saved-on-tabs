@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Сайт с сохранением текста в буфер обмена</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css ">
+  <link rel="stylesheet" href="css/adaptation.css">
+</head>
+<body>
+  <div class="menu-container">
+    <ul class="menu">
+      <li class="menu-item" data-tag="all">ВСЕ</li>
+      <li class="menu-item" data-tag="welcome">ПРИВЕТСТВЕННЫЙ</li>
+      <li class="menu-item" data-tag="step-by-step">РАБОТА ПОЭТАПНО</li>
+      <li class="menu-item" data-tag="understanding">ВОПРОС ВСЕ ЛИ ПОНЯТНО</li>
+      <li class="menu-item" data-tag="objections">ОТРАБОТКА ВОЗРАЖЕНИЙ</li>
+      <li class="menu-item" data-tag="deposits">ДЕПОЗИТЫ</li>
+      <li class="menu-item" data-tag="registration">РЕГИСТРАЦИЯ</li>
+      <li class="menu-item" data-tag="game">ИГРА</li>
+      <li class="menu-item" data-tag="additional">ДОП</li>
+      <li class="menu-item" data-tag="bot">БОТ</li>
+      <li class="menu-item" data-tag="introduction">ЗНАКОМСТВО</li>
+      <li class="menu-item" data-tag="ignore">ИГНОР</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Сайт с сохранением текста в буфер обмена</h1>
+    <div class="form-container">
+      <input type="text" id="input-title" placeholder="Введите название">
+      <textarea id="input-text" rows="4" placeholder="Введите текст"></textarea>
+      <select id="tag-select">
+        <option value="">Выберите категорию</option>
+        <option value="welcome">ПРИВЕТСТВЕННЫЙ</option>
+        <option value="step-by-step">РАБОТА ПОЭТАПНО</option>
+        <option value="understanding">ВОПРОС ВСЕ ЛИ ПОНЯТНО</option>
+        <option value="objections">ОТРАБОТКА ВОЗРАЖЕНИЙ</option>
+        <option value="deposits">ДЕПОЗИТЫ</option>
+        <option value="registration">РЕГИСТРАЦИЯ</option>
+        <option value="game">ИГРА</option>
+        <option value="additional">ДОП</option>
+        <option value="bot">БОТ</option>
+        <option value="introduction">ЗНАКОМСТВО</option>
+        <option value="ignore">ИГНОР</option>
+      </select>
+      <button onclick="copyText()">Сохранить в буфер обмена</button>
+    </div>
+    <div id="text-container" class="flex-container"></div>
+  </div>
+</div>
+  <script src="scripts.js"></script>
+</body>
+</html>
